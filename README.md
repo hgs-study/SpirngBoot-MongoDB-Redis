@@ -1,6 +1,6 @@
 ### MongoDB
 ---
-+ https://www.mongodb.com/ko-kr
++ https://www.mongodb.com
 + https://kciter.so/posts/about-mongodb
 
 #### ACID란?
