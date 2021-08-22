@@ -14,13 +14,4 @@ public class Post {
     private String title;
     private String content;
     private String author;
-
-
-    public void toUpdate(Post post){
-        this.id = post.id;
-        this.title = post.title;
-        this.content = post.content;
-        this.author = post.author;
-    }
-
 }
