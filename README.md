@@ -1,7 +1,8 @@
 ### MongoDB
 ---
-+ https://www.mongodb.com
-+ https://kciter.so/posts/about-mongodb
++ 공식 홈페이지 : https://www.mongodb.com
++ 설치 : https://m.blog.naver.com/wideeyed/221815886721
++ 참고 : https://kciter.so/posts/about-mongodb
 
 #### ACID란?
 ----
