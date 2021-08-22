@@ -23,10 +23,6 @@ public class PostController {
         return postService.findAll();
     }
 
-    @GetMapping("/posts/{id}")
-    public Post getPostById(@PathVariable Long id,@PathVariable String title){
-        return postService.findById(id);
-    }
 
     @GetMapping("/posts/{title}")
     public Post getPostByTitle(@PathVariable String title){
@@ -41,8 +37,8 @@ public class PostController {
     }
 
     @PatchMapping("/posts/{title}/{content}")
-    public void update(@PathVariable String title,
-                       @PathVariable String content){
+    public void updateContentByTitle(@PathVariable String title,
+                                     @PathVariable String content){
         postService.updateContentByTitle(title,content);
     }
 

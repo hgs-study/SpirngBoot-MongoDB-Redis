@@ -25,16 +25,13 @@ public class PostService {
         return postRepository.findAll();
     }
 
-    public Post findById(Long id){
-        return postRepository.findById(id);
-    }
 
     public Post findByTitle(String title){
         return postRepository.findByTitle(title);
     }
 
     public Post findByTitleAndContent(String title, String content){
-        return mongoTemplate.findOne(Query.query(Criteria.where("title").is(title)),Post.class);
+        return postRepository.findByTitleAndContent(title,content);
     }
 
     public void updateContentByTitle(String title, String content){
@@ -43,13 +40,13 @@ public class PostService {
         Update update = new Update();
         update.set("content",content);
 
-        mongoTemplate.updateFirst(query,update,Post.class);
+        mongoTemplate.updateFirst(query,update, Post.class);
     }
 
     public void removeByTitle(String title){
         Query query = new Query(Criteria.where("title").is(title));
 
-        mongoTemplate.remove(query,Post.class);
+        mongoTemplate.remove(query, Post.class);
     }
 
 
