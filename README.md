@@ -12,3 +12,12 @@
 #### MongoTemplate vs MongoRepository
 ----
 + https://ckddn9496.tistory.com/102
+
+
+### Redis Cache
+---
++ 참고
+```
+  https://deveric.tistory.com/98
+  https://yeon-kr.tistory.com/171
+```
