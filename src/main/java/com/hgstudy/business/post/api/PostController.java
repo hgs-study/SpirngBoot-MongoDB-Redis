@@ -1,7 +1,7 @@
-package com.hgstudy.post.api;
+package com.hgstudy.business.post.api;
 
-import com.hgstudy.post.entity.Post;
-import com.hgstudy.post.service.PostService;
+import com.hgstudy.business.post.entity.Post;
+import com.hgstudy.business.post.service.PostService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

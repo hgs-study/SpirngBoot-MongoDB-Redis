@@ -1,4 +1,4 @@
-package com.hgstudy.post.entity;
+package com.hgstudy.business.post.entity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

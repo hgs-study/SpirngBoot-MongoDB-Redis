@@ -1,6 +1,6 @@
-package com.hgstudy.post.repository;
+package com.hgstudy.business.post.repository;
 
-import com.hgstudy.post.entity.Post;
+import com.hgstudy.business.post.entity.Post;
 
 public interface PostCustomRepository {
     Post findByTitleAndContent(String title, String content);

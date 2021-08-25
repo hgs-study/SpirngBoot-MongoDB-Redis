@@ -1,6 +1,6 @@
-package com.hgstudy.post.repository;
+package com.hgstudy.business.post.repository;
 
-import com.hgstudy.post.entity.Post;
+import com.hgstudy.business.post.entity.Post;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface PostRepository extends PostCustomRepository, MongoRepository<Post,Long> {

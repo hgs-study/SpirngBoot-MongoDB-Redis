@@ -1,8 +1,9 @@
-package com.hgstudy.post.service;
+package com.hgstudy.business.post.service;
 
-import com.hgstudy.post.entity.Post;
-import com.hgstudy.post.repository.PostRepository;
+import com.hgstudy.business.post.entity.Post;
+import com.hgstudy.business.post.repository.PostRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
@@ -26,6 +27,7 @@ public class PostService {
     }
 
 
+    @Cacheable(key = "#title", value = "findPost")
     public Post findByTitle(String title){
         return postRepository.findByTitle(title);
     }
